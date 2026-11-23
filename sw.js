@@ -1,5 +1,5 @@
-/* QUÉT ĐIỂM — lưu app vào máy để chạy không cần mạng. Phiên bản: a6b4f6e1b6 */
-var V = 'quet-diem-a6b4f6e1b6';
+/* QUÉT ĐIỂM — lưu app vào máy để chạy không cần mạng. Phiên bản: 09fb8d1697 */
+var V = 'quet-diem-09fb8d1697';
 var FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(V).then(function (c) { return c.addAll(FILES); }).then(function () { return self.skipWaiting(); }));
